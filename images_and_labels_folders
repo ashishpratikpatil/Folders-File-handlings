@@ -1,0 +1,15 @@
+# list file and directories
+import os
+import pathlib
+
+operating_path_root_dir = "/home/cluebots/background_removal/edited/"
+operating_path_root_path = os.listdir(operating_path_pillows_dir)
+operating_path_root_path
+
+!mkdir ../processed #All the files will be created in processed folder
+%cd ../processed
+for folders in operating_path_root_path: 
+    print("created folder",folders)
+    !mkdir {folders}
+    !mkdir {folders}/labels  #Inside each folder name create subfolder named labels
+    !mkdir {folders}/images  #Inside each folder name create subfolder named images
